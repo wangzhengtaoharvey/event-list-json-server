@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event List</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="events-list-app">
+      <h1>Event List</h1>
+      
+      <button type="button" id="add-event-button">Add New Event</button>
+      <div class="input-group">
+        <label for="new-todo-input">Event</label>
+        <label for="new-todo-input">Start</label>
+        <label for="new-todo-input">Ends</label>
+        <label for="new-todo-input">Actions</label>
+      
+      <div class="todos-list"></div>
+
+      <form class="new-todo-form hidden" id="event-inputs">
+        <input id="new-todo-input" placeholder="Event Name" required />
+        <input type="date" id="new-todo-start-date" placeholder="Start Date" required />
+        <input type="date" id="new-todo-end-date" placeholder="End Date" required />
+        <button type="submit" id="save-event-button">Save</button>
+        <button type="button" id="delete-event-button">Delete</button>
+      </form>
+    </div>
+
+    <script src="./eventlistApi.js"></script>
+    <script src="./eventlist.js"></script>
+  </body>
+</html>
